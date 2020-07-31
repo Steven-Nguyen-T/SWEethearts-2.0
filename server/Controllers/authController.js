@@ -57,7 +57,7 @@ authController.editProfile = async (req, res, next) => {
     about,
   } = req.body;
 
-  const queryText = `UPDATE users SET linkedin= $1, githubhandle=$2, personalpage=$3, about=$4 WHERE username = $5`;
+  const queryText = `UPDATE users SET linkedin= $1, githubhandle=$2, personalpage=$3, about=$4 WHERE username = $5 RETURNING *`;
   ;
 
   const queryValue = [

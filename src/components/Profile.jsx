@@ -3,7 +3,6 @@ import { Container, Col, Row, Button, Form } from 'react-bootstrap';
 import Spinner from './Spinner';
 import '../styles/user-profile.scss';
 import axios from 'axios';
-import EditProfile from './EditProfile';
 import Popup from "reactjs-popup";
 
 const Profile = (props) => {
